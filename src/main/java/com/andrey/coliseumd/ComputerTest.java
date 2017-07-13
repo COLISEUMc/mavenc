@@ -1,30 +1,23 @@
 package com.andrey.coliseumd;
 
-public class ComputerTest extends Neuron implements Interfaces2{
+public class ComputerTest implements Interface {
 
-	
-	@Override
-	void oneTypeOfComputers() {
-		// TODO Auto-generated method stub
-		super.oneTypeOfComputers();
-	}
-
+ 
 	int RamMemory = 512;
 	int CPUmemory = 1000;
 	int VideoMemory = 4000;
-	
 	public void changeRamMemory(int newValue) {
 		RamMemory = newValue;
+		
 	}
-	
 	public void changeCPUmemory(int time) {
-		CPUmemory = CPUmemory + time;
+		CPUmemory = time + CPUmemory;
+		
 	}
-	
 	public void changeVideoMemory(int speed) {
-		VideoMemory = VideoMemory + speed;
+		VideoMemory = speed + VideoMemory;
+		assert (VideoMemory > 7000);
 	}
-	
 	public void printStates() {
 		
 		System.out.println("RamMemory = " + RamMemory 

@@ -1,6 +1,6 @@
 package com.andrey.coliseumd;
 
-public class Bicycle extends Neuron implements Interfaces2 {
+public class Bicycle extends Neuron  {
 	int RamMemory = 200;
 	int CPUmemory = 400;
 	int VideoMemory = 600;
@@ -21,9 +21,8 @@ public class Bicycle extends Neuron implements Interfaces2 {
 				+ " CPUmemory = " + CPUmemory + 
 				" VideoMemory = " + VideoMemory);
 	}
-	@Override
-	void oneTypeOfComputers() {
-		// TODO Auto-generated method stub
+	
+	public void oneTypeOfComputers() {
 		super.oneTypeOfComputers();
 	}
 }

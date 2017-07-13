@@ -8,20 +8,10 @@ public class Computer {
 		Bicycle Computer2 = new Bicycle();
 		
 		
-		Computer.changeRamMemory(500);
-		Computer.changeCPUmemory(2000);
-		Computer.changeVideoMemory(2000);
-		Computer.oneTypeOfComputers();
-		Computer.printStates();
-		
-		Computer2.changeRamMemory(800);
-		Computer2.changeCPUmemory(5000);
-		Computer2.changeVideoMemory(700);
-		Computer2.changeRamMemory(300);
-		Computer2.changeCPUmemory(30000);
-		Computer2.changeVideoMemory(8000);
-		Computer2.printStates();
-		
+		System.out.println("Computer instanceof Parent: " + (Computer instanceof ComputerTest));
+		System.out.println("Computer2 instanceof Bicycle: " + (Computer2 instanceof Bicycle));
+		System.out.println("Computer instanceof Interface: " + (Computer instanceof Interface));
+		System.out.println("Computer2 instanceof Parent: " + (Computer2 instanceof Interface));
 }
 }
 
